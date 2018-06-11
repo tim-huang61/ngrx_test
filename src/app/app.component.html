@@ -24,9 +24,13 @@
   </li>
 </ul>
 
-<div>
-  <p>Counter: {{ (counter | async | json)  }}</p>
-  <button (click)="increment()">Increment</button>
-  <button (click)="decrement()">Decrement</button>
-  <button (click)="reset()">Reset</button>
-</div>
+<ul>
+  <li>
+    <a [routerLink]="'page1'">Page1</a>
+  </li>
+  <li>
+    <a [routerLink]="'page2'">Page2</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

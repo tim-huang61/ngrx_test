@@ -19,6 +19,7 @@ import { DECREMENT, INCREMENT, RESET } from './counter.action';
 // }
 
 export function counterReducer(state: number = 0, action: any) {
+    console.log(state);
     const { type, payload } = action;
     switch (type) {
         case INCREMENT:
